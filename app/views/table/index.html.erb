@@ -1,17 +1,19 @@
-<div class="container">
-  <div class="row">
-    <ul>
-    <% @elements["order"].each do |element| %>
-      <li>
-        <%= @elements[element]["name"] %>
-        <%= @elements[element]["number"] %>-
-        <%= @elements[element]["period"] %>,
-        <%= @elements[element]["atomic_mass"] %>
-      </li>
-    <% end %>
-    </ul>
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+<main>
+  <div class="table">
+  <% @elements["order"].in_groups_of(18, false).each do |group| %>
+    <div class='row'>
+      <% group.each do |element| %>
+        <div class='element'>
+          <section class="<%= @elements[element]["category"]%>">
+            <span><%= @elements[element]["number"] %></span>
+            <h2><%= @elements[element]["symbol"] %></h2>
+            <p><%= @elements[element]["name"] %></p>
+            <p><%= @elements[element]["atomic_mass"] %></p>
+          </section>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
   </div>
-</div>
-
-
-
+</main>
