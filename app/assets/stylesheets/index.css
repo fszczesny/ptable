@@ -177,3 +177,7 @@ li {
     border: 1px solid black;
     border-radius: 0.2rem;
 }
+
+a:link {
+    text-decoration: none;
+}
