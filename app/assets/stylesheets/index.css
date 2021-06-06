@@ -15,10 +15,10 @@ body {
 
 div.element {
     flex-grow: 1;
-    min-width: 7em;
-    max-width: 7em;
-    min-height: 7em;
-    max-height: 7em;
+    min-width: 7.5em;
+    max-width: 7.5em;
+    min-height: 7.5em;
+    max-height: 7.5em;
     margin: 0.25em;
 }
 
@@ -122,8 +122,12 @@ h2 {
     margin-top: .7em;
 }
 
-p:last-child {
-    font-size: .8em;
+h3 {
+    font-size: 1em;
+}
+
+h4 {
+    font-size: 0.9em;
 }
 
 main {
@@ -131,7 +135,7 @@ main {
 }
 
 section {
-    height: 7em;
+    height: 7.5em;
     border: 1px solid;
     border-radius: .5rem;
     line-height: 1.25;
