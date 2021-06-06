@@ -55,17 +55,12 @@ div.row {
 
 .metalloid {
     color: black;
-    background-color: rgb(152, 212, 255)
-}
-
-.halogenio {
-    color: black;
-    background-color: rgb(170, 225, 255);
+    background-color: rgb(153, 230, 255)
 }
 
 .post-transition.metal {
     color: black;
-    background-color: rgb(190, 210, 210);
+    background-color: rgb(179, 179, 179)
 }
 
 .transition.metal {
@@ -75,12 +70,48 @@ div.row {
 
 .lanthanide {
     color: black;
-    background-color: rgb(226, 205, 95);
+    background-color: rgb(215, 186, 40)
 }
 
 .actinide {
     color: black;
-    background-color: rgb(240, 166, 167);
+    background-color: rgb(231, 207, 207);
+}
+
+.subtitle-diatomic-nonmetal {
+    background-color: rgb(163, 237, 0);
+}
+
+.subtitle-noble-gas {
+    background-color: rgb(200, 166, 255)
+}
+
+.subtitle-alkali-metal {
+    background-color: rgb(245, 200, 100);
+}
+
+.subtitle-alkaline-earth-metal {
+    background-color: rgb(240, 230, 90);
+}
+
+.subtitle-metalloid {
+    background-color: rgb(153, 230, 255)
+}
+
+.subtitle-post-transition-metal {
+    background-color: rgb(179, 179, 179)
+}
+
+.subtitle-transition-metal {
+    background-color: rgb(245, 175, 175);
+}
+
+.subtitle-lanthanide {
+    background-color: rgb(215, 186, 40)
+}
+
+.subtitle-actinide {
+    background-color: rgb(231, 207, 207);
 }
 
 h1 {
@@ -102,7 +133,7 @@ main {
 
 section {
     height: 7em;
-    border: .125rem solid;
+    border: 1px solid;
     border-radius: .5rem;
     line-height: 1.25;
     position: relative;
@@ -120,4 +151,29 @@ span {
 
 .table {
     margin: auto;
+}
+
+.subtitle {
+    text-align: center;
+    flex-basis: 13.5rem;
+    font-size: 1.5em;
+    width: 100%;
+    margin: 2em 0;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    justify-content: center;
+}
+
+li {
+    line-height: 1.25;
+    flex-basis: auto;
+    margin-bottom: 0;
+    margin-right: 1em;
+    list-style-position: inside;
+    border: 1px solid black;
+    border-radius: 0.2rem;
 }

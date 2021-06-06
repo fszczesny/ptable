@@ -1,5 +1,19 @@
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 <main>
+  <div class="subtitle">
+    <h2>Legenda</h2>
+    <ul>
+      <li class="subtitle-alkali-metal">Metais Alcalinos</li>
+      <li class="subtitle-alkaline-earth-metal">Metais Alcalino Terrosos</li>
+      <li class="subtitle-lanthanide">Lantanídeos</li>
+      <li class="subtitle-actinide">Actinídios</li>
+      <li class="subtitle-transition-metal">Metais de Transição</li>
+      <li class="subtitle-post-transition-metal">Outros Metais</li>
+      <li class="subtitle-metalloid">Semimetais</li>
+      <li class="subtitle-diatomic-nonmetal">Não Metais</li>
+      <li class="subtitle-noble-gas">Gases Nobres</li>    
+    </ul>
+  </div>
   <div class="table">
   <% @elements["order"].in_groups_of(18, false).each do |group| %>
     <div class='row'>
