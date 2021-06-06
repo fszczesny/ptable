@@ -1,5 +1,43 @@
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 <%= stylesheet_link_tag 'show', media: 'all', 'data-turbolinks-track' => true %>
 <main>
-    <%= link_to 'Voltar', table_index_path, class:'button' %>
+    <div class="elementName">
+        <h2><%= @element["name"] %></h1>
+    </div>
+    <div class="elementBody">
+        <div class="elementDiagram">
+            <section class="<%= @element["category"]%>">
+                <span><%= @element["number"] %></span>
+                <h2><%= @element["symbol"] %></h2>
+                <h3><%= @element["name"] %></p>
+                <h3><%= @element["shells"] %></p>
+                <h3><%= @element["atomic_mass"] %></p>
+            </section>
+        </div>
+    </div>
+    <div class="dataBody">
+        <div class="elementData">
+            <h3 class=''>Dados do Elemento</h3>
+            <table id='element-table' class="table table-bordered">
+            <thead  class="thead-light">
+                <tr>
+                <th>Dado</th>
+                <th>Informação sobre</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <% @element.each do |key, value| %>
+                <tr>
+                    <td><%= key %></td>
+                    <td><%= value %></td>
+                </tr>
+                <% end %>
+            </tbody>
+            </table>
+        </div>
+    </div>
+    <div class= btn btn-dark>
+        <%= link_to 'Voltar', table_index_path, class:'btn' %>
+    </div>
 </main>

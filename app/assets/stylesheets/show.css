@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+@import "bootstrap";
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +7,114 @@
     box-sizing: border-box;
 }
 
-.button {
-    font: bold 3em Roboto;
-    border: 1px solid;
-    text-decoration: none;
-    background-color: gray;
+div.elementBody {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+div.dataBody {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+div.elementDiagram {
+    min-width: 20em;
+    max-width: 20em;
+    min-height: 20em;
+    max-height: 20em;
+    margin: 1em;
+}
+
+.diatomic.nonmetal {
     color: black;
-    border-radius: 0.2rem;
+    background-color: rgb(163, 237, 0);
+}
+
+.polyatomic.nonmetal {
+    color: black;
+    background-color: rgb(163, 237, 0);
+}
+
+.noble.gas {
+    color: black;
+    background-color: rgb(200, 166, 255)
+}
+
+.alkali.metal {
+    color: black;
+    background-color: rgb(245, 200, 100);
+}
+
+.alkaline.earth.metal {
+    color: black;
+    background-color: rgb(240, 230, 90);
+}
+
+.metalloid {
+    color: black;
+    background-color: rgb(153, 230, 255)
+}
+
+.post-transition.metal {
+    color: black;
+    background-color: rgb(179, 179, 179)
+}
+
+.transition.metal {
+    color: black;
+    background-color: rgb(245, 175, 175);
+}
+
+.lanthanide {
+    color: black;
+    background-color: rgb(215, 186, 40)
+}
+
+.actinide {
+    color: black;
+    background-color: rgb(231, 207, 207);
+}
+
+h1 {
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+main {
+    margin: auto;
+}
+
+section {
+    height: 20em;
+    border: 1px solid;
+    border-radius: .5rem;
+    line-height: 1.25;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span {
+    font-size: 1.5em;
+    position: absolute;
+    top: .3em;
+    right: .5em;
+}
+
+th {
+    font-size: 1.1em;
+}
+
+td {
+    font-size: 1.1em;
 }
