@@ -1,4 +1,6 @@
 class TableController < ApplicationController
+
+  # Creates matrices of elements for each column
   def index
     file = File.read("db/data.json")
     @elements = JSON.parse(file)
