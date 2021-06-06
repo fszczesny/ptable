@@ -154,3 +154,9 @@ span {
 a:link {
     text-decoration: none;
 }
+
+section:hover {
+    transition: .3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
