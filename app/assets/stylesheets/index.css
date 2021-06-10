@@ -7,7 +7,7 @@
 }
 
 body {
-    font: .65em 'Roboto';
+    font: 10px 'Roboto';
     color: black;
     text-align: center;
     background: #ffffff;
@@ -15,10 +15,14 @@ body {
 
 .table-borderless td {
     flex-grow: 1;
-    min-width: 7em;
-    max-width: 7.5em;
-    min-height: 7em;
-    max-height: 7em;
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 65px;
+    max-height: 65px;
+}
+
+.table-borderless {
+    margin-right: 25px;
 }
 
 .diatomic.nonmetal {
@@ -107,25 +111,31 @@ body {
     background-color: rgb(231, 207, 207);
 }
 
+.subtitle-header {
+    background-color: #313435;
+    color: white;
+}
+
 h1 {
-    font-size: 5em;
+    font-size: 80px;
 }
 
 h2 {
-    font-size: 2em;
-    margin-top: .7em;
+    font-size: 20px;
 }
 
 h3 {
-    font-size: 1em;
+    margin: 0;
+    font-size: 10px;
 }
 
 h4 {
-    font-size: 0.9em;
+    margin-top: 1px;
+    font-size: 9px;
 }
 
 h5 {
-    font-size: 1.5em;
+    font-size: 16px;
 }
 
 main {
@@ -139,9 +149,9 @@ main {
 }
 
 section {
-    height: 7em;
+    height: 65px;
     border: 1px solid;
-    border-radius: .5rem;
+    border-radius: 8px;
     line-height: 1.25;
     position: relative;
     display: flex;
@@ -150,10 +160,10 @@ section {
 }
 
 span {
-    font-size: .8em;
+    font-size: 9px;
     position: absolute;
-    top: .3em;
-    right: .5em;
+    top: 3px;
+    right: 3px;
 }
 
 a:link {
@@ -162,6 +172,7 @@ a:link {
 
 section:hover {
     transition: .3s;
-    transform: scale(1.1);
+    transform: scale(1.3);
     cursor: pointer;
+    z-index: 2;
 }

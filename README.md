@@ -21,7 +21,7 @@ Ao avançar ele pedirá que faça login com sua conta do GitHub e pronto, seu am
 Executar os seguintes comandos antes de rodar a aplicação no gitpo.io. Isso de faz necessário pelo fato da gitpo.io usar a versão 2.7.1 do rails e o o projeto a versão 2.6.6.
 
 ```bash
-rmv install 2.6.6
+rvm install 2.6.6
 gem install bundler:2.2.4
 ```
 

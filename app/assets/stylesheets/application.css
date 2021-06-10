@@ -13,10 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
-h1 {
-    font: 5em 'Roboto';
-    color: black;
-    text-align: center;
-}

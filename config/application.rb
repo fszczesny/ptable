@@ -31,6 +31,7 @@ module PeriodicTable
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.hosts << "3000-fuchsia-swordfish-72u9m9fl.ws-us08.gitpod.io"
 
     # Don't generate system test files.
     config.generators.system_tests = nil
