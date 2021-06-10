@@ -18,25 +18,22 @@
     <div class="dataBody">
         <div class="elementData">
             <table id='element-table' class="table table-bordered">
-            <thead  class="thead-light">
+            <thead  class="thead-dark">
                 <tr>
-                <th>Dado</th>
-                <th>Informação sobre</th>
+                <th><h5>Dado<h5></th>
+                <th><h5>Informação sobre<h5></th>
                 </tr>
             </thead>
 
             <tbody>
                 <% @element.each do |key, value| %>
                 <tr>
-                    <td><%= key %></td>
-                    <td><%= value %></td>
+                    <td><h5><%= key %><h5></td>
+                    <td><h5><%= value %><h5></td>
                 </tr>
                 <% end %>
             </tbody>
             </table>
         </div>
-    </div>
-    <div class= btn btn-dark>
-        <%= link_to 'Voltar', table_index_path, class:'btn' %>
     </div>
 </main>

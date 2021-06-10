@@ -17,6 +17,8 @@ div.dataBody {
     display: flex;
     justify-content: center;
     margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 div.elementDiagram {
@@ -91,11 +93,13 @@ h3 {
 
 main {
     margin: auto;
+    flex-direction: column;
+    justify-content: center;
 }
 
 section {
     height: 20em;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: .5rem;
     line-height: 1.25;
     position: relative;
@@ -117,4 +121,8 @@ th {
 
 td {
     font-size: 1.1em;
+}
+
+section:hover {
+    transform: scale(1) !important;
 }
