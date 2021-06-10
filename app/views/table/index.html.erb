@@ -4,198 +4,30 @@
   <div class="elementData">
     <table id='periodic-table' class="table-sm table-borderless">
       <tbody>
-          <tr>
-            <td><h2></h2></td>
-            <td><h2>A</h2></td>
-            <td><h2>B</h2></td>
-            <td><h2>C</h2></td>
-            <td><h2>D</h2></td>
-            <td><h2>E</h2></td>
-            <td><h2>F</h2></td>
-            <td><h2>G</h2></td>
-            <td><h2>H</h2></td>
-            <td><h2>I</h2></td>
-            <td><h2>J</h2></td>
-            <td><h2>K</h2></td>
-            <td><h2>L</h2></td>
-            <td><h2>M</h2></td>
-            <td><h2>N</h2></td>
-            <td><h2>O</h2></td>
-            <td><h2>P</h2></td>
-            <td><h2>Q</h2></td>
-            <td><h2>R</h2></td>
-          </tr>
-          <tr>
-            <td>
-              <h2>1</h2>
-            </td>
-            <% @lineOne.each_with_index do |element| %>
-              <td>
-                <% if (element != nil) %>
-                <%= link_to table_path(@elements[element]["name"].downcase) do %> 
-                  <section class="<%= @elements[element]["category"]%>">
-                    <span><%= @elements[element]["number"] %></span>
-                    <h2><%= @elements[element]["symbol"] %></h2>
-                    <h3><%= @elements[element]["name"] %></h3>
-                    <h4><%= @elements[element]["atomic_mass"] %></h4>
-                  </section>
-                <% end %>
-                <%end%>
-              </td>
-            <% end %>
-          </tr>
-          <tr>
-            <td>
-              <h2>2</h2>
-            </td>
-            <% @lineTwo.each_with_index do |element| %>
-              <td>
-                <% if (element != nil) %>
-                <%= link_to table_path(@elements[element]["name"].downcase) do %> 
-                  <section class="<%= @elements[element]["category"]%>">
-                    <span><%= @elements[element]["number"] %></span>
-                    <h2><%= @elements[element]["symbol"] %></h2>
-                    <h3><%= @elements[element]["name"] %></h3>
-                    <h4><%= @elements[element]["atomic_mass"] %></h4>
-                  </section>
-                <% end %>
-                <%end%>
-              </td>
-            <% end %>
-          </tr>
-          <tr>
-            <td>
-              <h2>3</h2>
-            </td>
-            <% @lineTree.each_with_index do |element| %>
-              <td>
-                <% if (element != nil) %>
-                <%= link_to table_path(@elements[element]["name"].downcase) do %> 
-                  <section class="<%= @elements[element]["category"]%>">
-                    <span><%= @elements[element]["number"] %></span>
-                    <h2><%= @elements[element]["symbol"] %></h2>
-                    <h3><%= @elements[element]["name"] %></h3>
-                    <h4><%= @elements[element]["atomic_mass"] %></h4>
-                  </section>
-                <% end %>
-                <%end%>
-              </td>
-            <% end %>
-          </tr>
-          <tr>
-            <td>
-              <h2>4</h2>
-            </td>
-          <% @lineFour.each_with_index do |element| %>
-          <td>
-              <% if (element != nil) %>
-              <%= link_to table_path(@elements[element]["name"].downcase) do %> 
-                <section class="<%= @elements[element]["category"]%>">
-                  <span><%= @elements[element]["number"] %></span>
-                  <h2><%= @elements[element]["symbol"] %></h2>
-                  <h3><%= @elements[element]["name"] %></h3>
-                  <h4><%= @elements[element]["atomic_mass"] %></h4>
-                </section>
-              <% end %>
-              <%end%>
-            </td>
+        <tr>
+          <% @collumsLegend.each do |collum| %>
+            <td><h2><%= collum %></h2></td>
           <% end %>
         </tr>
-        <tr>
-        <td>
-            <h2>5</h2>
-        </td>
-        <% @lineFive.each_with_index do |element| %>
-          <td>
-            <% if (element != nil) %>
-            <%= link_to table_path(@elements[element]["name"].downcase) do %> 
-              <section class="<%= @elements[element]["category"]%>">
-                <span><%= @elements[element]["number"] %></span>
-                <h2><%= @elements[element]["symbol"] %></h2>
-                <h3><%= @elements[element]["name"] %></h3>
-                <h4><%= @elements[element]["atomic_mass"] %></h4>
-              </section>
+          <% @periodicTable.each_with_index do |line, i| %>
+          <tr>
+            <td><h2><%= i %></h2></td>
+            <% line.each_with_index do |element| %>
+              <td>
+                <% if (element != nil) %>
+                <%= link_to table_path(@elements[element]["name"].downcase) do %> 
+                  <section class="<%= @elements[element]["category"]%>">
+                    <span><%= @elements[element]["number"] %></span>
+                    <h2><%= @elements[element]["symbol"] %></h2>
+                    <h3><%= @elements[element]["name"] %></h3>
+                    <h4><%= @elements[element]["atomic_mass"] %></h4>
+                  </section>
+                <% end %>
+                <%end%>
+              </td>
             <% end %>
-            <%end%>
-          </td>
-        <% end %>
-      </tr>
-      <tr>
-          <td>
-              <h2>6</h2>
-          </td>
-        <% @lineSix.each_with_index do |element| %>
-          <td>
-            <% if (element != nil) %>
-            <%= link_to table_path(@elements[element]["name"].downcase) do %> 
-              <section class="<%= @elements[element]["category"]%>">
-                <span><%= @elements[element]["number"] %></span>
-                <h2><%= @elements[element]["symbol"] %></h2>
-                <h3><%= @elements[element]["name"] %></h3>
-                <h4><%= @elements[element]["atomic_mass"] %></h4>
-              </section>
-            <% end %>
-            <%end%>
-          </td>
-        <% end %>
-      </tr>
-      <tr>
-          <td>
-              <h2>7</h2>
-          </td>
-        <% @lineSeven.each_with_index do |element| %>
-          <td>
-            <% if (element != nil) %>
-            <%= link_to table_path(@elements[element]["name"].downcase) do %> 
-              <section class="<%= @elements[element]["category"]%>">
-                <span><%= @elements[element]["number"] %></span>
-                <h2><%= @elements[element]["symbol"] %></h2>
-                <h3><%= @elements[element]["name"] %></h3>
-                <h4><%= @elements[element]["atomic_mass"] %></h4>
-              </section>
-            <% end %>
-            <%end%>
-          </td>
-        <% end %>
-      </tr>
-      <tr>
-        <td>
-            <h2>6</h2>
-        </td>
-        <% @lineEigth.each_with_index do |element| %>
-          <td>
-            <% if (element != nil) %>
-            <%= link_to table_path(@elements[element]["name"].downcase) do %> 
-              <section class="<%= @elements[element]["category"]%>">
-                <span><%= @elements[element]["number"] %></span>
-                <h2><%= @elements[element]["symbol"] %></h2>
-                <h3><%= @elements[element]["name"] %></h3>
-                <h4><%= @elements[element]["atomic_mass"] %></h4>
-              </section>
-            <% end %>
-            <%end%>
-          </td>
-        <% end %>
-      </tr>
-      <tr>
-          <td>
-              <h2>7</h2>
-          </td>
-        <% @lineNine.each_with_index do |element| %>
-          <td>
-            <% if (element != nil) %>
-            <%= link_to table_path(@elements[element]["name"].downcase) do %> 
-              <section class="<%= @elements[element]["category"]%>">
-                <span><%= @elements[element]["number"] %></span>
-                <h2><%= @elements[element]["symbol"] %></h2>
-                <h3><%= @elements[element]["name"] %></h3>
-                <h4><%= @elements[element]["atomic_mass"] %></h4>
-              </section>
-            <% end %>
-            <%end%>
-          </td>
-        <% end %>
-      </tr>   
+          </tr>   
+          <% end %>
       </tbody>
     </table>
   </div>
