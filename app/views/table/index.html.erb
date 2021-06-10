@@ -11,7 +11,7 @@
         </tr>
           <% @periodicTable.each_with_index do |line, i| %>
           <tr>
-            <td><h2><%= i %></h2></td>
+            <td><h2><%= (i+1) %></h2></td>
             <% line.each_with_index do |element| %>
               <td>
                 <% if (element != nil) %>
@@ -36,18 +36,26 @@
     <table id='subtitle-table' class="table table-bordered">
               <tbody>
                   <tr>
-                      <td class= "subtitle-alkali-metal"><h3>Metais Alcalinos</h3></td>
-                      <td class= "subtitle-alkaline-earth-metal"><h3>Metais Alcalino Terrosos</h3></td>
-                      <td class= "subtitle-lanthanide"><h3>Lantanídeos</h3></td>
-                      <td class= "subtitle-actinide"><h3>Actinídios</h3></td>
-                      <td class= "subtitle-transition-metal"><h3>Metais de Transição</h3></td>
-                      <td class= "subtitle-post-transition-metal"><h3>Outros Metais</h3></td>
-                      <td class= "subtitle-metalloid"><h3>Semimetais</h3></td>
-                      <td class= "subtitle-diatomic-nonmetal"><h3>Não Metais</h3></td>
-                      <td class= "subtitle-noble-gas"><h3>Gases Nobres</h3></td>
+                      <td class= "subtitle-alkali-metal"><h5>Metais Alcalinos</h5></td>
+                      </tr><tr>
+                      <td class= "subtitle-alkaline-earth-metal"><h5>Metais Alcalino Terrosos</h5></td>
+                      </tr><tr>
+                      <td class= "subtitle-lanthanide"><h5>Lantanídeos</h5></td>
+                      </tr><tr>
+                      <td class= "subtitle-actinide"><h5>Actinídios</h5></td>
+                      </tr><tr>
+                      <td class= "subtitle-transition-metal"><h5>Metais de Transição</h5></td>
+                      </tr><tr>
+                      <td class= "subtitle-post-transition-metal"><h5>Outros Metais</h5></td>
+                      </tr><tr>
+                      <td class= "subtitle-metalloid"><h5>Semimetais</h5></td>
+                      </tr><tr>
+                      <td class= "subtitle-diatomic-nonmetal"><h5>Não Metais</h5></td>
+                      </tr><tr>
+                      <td class= "subtitle-noble-gas"><h5>Gases Nobres</h5></td>
                   </tr>
               </tbody>
     </table>
-    </div>
+  </div>
 </div>
 </main>
